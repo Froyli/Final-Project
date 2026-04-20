@@ -1,78 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Carlton Jackson - CS 499 ePortfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #0d1117;
-            color: #e6edf3;
-        }
-        h1, h2 {
-            color: #58a6ff;
-        }
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Carlton Jackson - CS 499 ePortfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+header {
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background-color: #21262d;
+}
+
+nav a {
+    color: #58a6ff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h1, h2 {
+    color: #58a6ff;
+}
+
+a {
+    color: #58a6ff;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    margin-top: 15px;
+}
+
+.card {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+</style>
 </head>
 
 <body>
+
+<header>
+    <h1>Carlton Jackson</h1>
+    <p>CS 499 ePortfolio</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#video">Code Review</a>
+    <a href="#software">Software</a>
+    <a href="#algorithms">Algorithms</a>
+    <a href="#database">Databases</a>
+</nav>
+
 <div class="container">
 
-    <h1>Carlton Jackson - CS 499 ePortfolio</h1>
-
-    <section>
-        <h2>Professional Self-Assessment</h2>
+<!-- ABOUT -->
+<section id="about">
+    <h2>Professional Self-Assessment</h2>
+    <div class="card">
         <p>
             This portfolio showcases my growth throughout the Computer Science program,
             highlighting my skills in software engineering, algorithms, databases,
-            communication, and security.
+            communication, and security. Through hands-on projects and enhancements,
+            I have developed the ability to build, analyze, and improve real-world systems.
         </p>
-        <a href="Self Assessment.docx">Download Self-Assessment</a>
-    </section>
+        <a href="Self Assessment.docx">Download Full Self-Assessment</a>
+    </div>
+</section>
 
-    <section>
-        <h2>Code Review</h2>
-        <p>Watch my code review video:</p>
-        <a href="https://www.youtube.com/watch?v=QsBEJZlPKYk" target="_blank">
-            ▶ Watch Video
-        </a>
-    </section>
+<!-- VIDEO -->
+<section id="video">
+    <h2>Code Review</h2>
+    <div class="card">
+        <p>This video explains the original project, identifies issues, and outlines improvements.</p>
 
-    <section>
-        <h2>Software Engineering Artifact</h2>
-        <p>This enhancement focuses on improving structure, readability, and maintainability.</p>
+        <iframe 
+            src="https://www.youtube.com/embed/QsBEJZlPKYk" 
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<!-- SOFTWARE -->
+<section id="software">
+    <h2>Software Engineering Artifact</h2>
+    <div class="card">
+        <p>
+            This enhancement focuses on improving structure, readability, and maintainability.
+            The project demonstrates better organization, modular design, and overall software quality.
+        </p>
         <a href="CS 499 Milestone Two Narrative.docx">View Narrative</a>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>Algorithms & Data Structures</h2>
-        <p>This enhancement demonstrates improved logic, efficiency, and algorithmic thinking.</p>
+<!-- ALGORITHMS -->
+<section id="algorithms">
+    <h2>Algorithms & Data Structures</h2>
+    <div class="card">
+        <p>
+            This enhancement improves logic efficiency and demonstrates stronger algorithmic thinking
+            through optimized data handling and performance improvements.
+        </p>
         <a href="4.docx">View Narrative</a>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>Databases</h2>
-        <p>This enhancement demonstrates database integration and data-driven design.</p>
+<!-- DATABASE -->
+<section id="database">
+    <h2>Databases</h2>
+    <div class="card">
+        <p>
+            This enhancement demonstrates database integration and data-driven design,
+            improving how data is stored, retrieved, and used within the system.
+        </p>
         <a href="Milestone Four.docx">View Narrative</a>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>Course Outcomes Demonstrated</h2>
+<!-- OUTCOMES -->
+<section>
+    <h2>Course Outcomes Demonstrated</h2>
+    <div class="card">
         <ul>
             <li>Collaboration and communication</li>
             <li>Professional technical writing</li>
@@ -80,15 +160,21 @@
             <li>Technical implementation and tools</li>
             <li>Security mindset</li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <h2>Supporting Files</h2>
+<!-- FILES -->
+<section>
+    <h2>Supporting Files</h2>
+    <div class="card">
         <p>
-            All original and enhanced artifact files were submitted with the course assignment.
+            All original and enhanced artifact files were submitted with the course assignment
+            and are represented through the narratives and documentation in this portfolio.
         </p>
-    </section>
+    </div>
+</section>
 
 </div>
+
 </body>
 </html>
